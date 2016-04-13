@@ -167,8 +167,9 @@
 												System.out.println(request.getRequestURI());
 											 %>
 											<%if(logined){ %>
-											<td nowrap="nowrap" width="1%"><a
-												href="delete.jsp?id=<%=a.getId()%>&isLeaf=<%=a.isLeaf()%>&pid=<%=a.getPid()%>&from=<%=url%>">DEL</a>
+											<td nowrap="nowrap" width="1%">
+											<a href="delete.jsp?id=<%=a.getId()%>&isLeaf=<%=a.isLeaf()%>&pid=<%=a.getPid()%>&from=<%=url%>">DEL</a>
+											<a href="modify.jsp?id=<%=a.getId()%>">MOD</a>
 											</td>
 											<%} %>
 
